@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "Hello Thank you good luck to you";
+        document.write(str.charAt(16), "<br>"); // 인덱스 16번째에 값
+        document.write(str.indexOf("you"), "<br>"); // 첫번째에 발견된 you의 인덱스
+        document.write(str.indexOf("you", 16), "<br>"); // 16번째 인덱스에서 발견된 you의 인덱스
+        document.write(str.lastIndexOf("you"), "<br>"); // 뒤에서부터 첫번째로 발견된 you의 인덱스
+        document.write(str.lastIndexOf("you", 25), "<br>"); // 25번째에서 뒤에서부터 첫번째로 발견된 you의 인덱스
+        document.write("=================================<br>");
+        document.write(str.match("luck"), "<br>"); // luck을 찾아서 출력
+        document.write(str.match("lack"), "<br>"); // lack이 없기에 null출력
+        document.write(str.search("luck"), "<br>"); // luck을 찾아서 인덱스를 출력
+        document.write(str.search("you"), "<br>"); // you를 찾아서 인덱스를 출력
+        document.write(str.substr(21, 4), "<br>"); // 21번 인덱스에서 4개를 출력
+        document.write(str.substring(6, 11), "<br>"); // 6번 인덱스에서 11번 인덱스 앞에까지 출력
+        document.write(str.replace("you", "me"), "<br>"); // 첫번째로 발견된 you를 me로 변경
+        document.write("=================================<br>");
+        document.write(str.toLowerCase(), "<br>")
+        document.write(str.toUpperCase(), "<br>"); 
+        document.write(str.length, "<br>"); 
+        document.write("=================================<br>");
+        document.write(str.replace("you", "me"), "<br>"); // 첫번째로 발견된 you를 me로 변경
+        var arr = str.split(" "); // 공백을 기준으로 배열 지정
+        document.write(arr[0], "<br>");
+        document.write(arr[4], "<br>");
+
+        var str2 = 'A';
+        var t = str2.charCodeAt(0); // A의 유니코드
+        document.write(t, "<br>");
+        document.write(String.fromCharCode(65), "<br>"); // 유니코드를 문자로 변환
+        document.write(String.fromCharCode(72), "<br>"); // 유니코드를 문자로 변환
+        document.write(str.charCodeAt(0), "<br>"); // 유니코드를 문자로 변환
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
